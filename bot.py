@@ -27,6 +27,6 @@ async def on_message(message):
     elif message.content.find("bajo jajo") != -1:
         await message.channel.send("Ty pojebie kurwa się zamknij tam kurwa a nie bajoo jajo ty pierdolony chamie")
         
-client.run(token)
+client.run("NzgyMjA3NDE0MzY2ODk2MTI4.X8I1bA.v5vO8zqTSznlnTWOiZTwukQv8Ek")
 
 
