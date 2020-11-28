@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 import random
+import os
+
 teksty = [" to śmieć"," jest jebaną pałą"," chuj ci na starego"]
 client = discord.Client()
 token = os.getenv("DISCORD_BOT_TOKEN")
