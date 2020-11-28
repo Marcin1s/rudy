@@ -3,6 +3,7 @@ from discord.ext import commands
 import random
 teksty = [" to śmieć"," jest jebaną pałą"," chuj ci na starego"]
 client = discord.Client()
+token = os.getenv("DISCORD_BOT_TOKEN")
 
 @client.event
 async def on_message(message):
@@ -24,6 +25,6 @@ async def on_message(message):
     elif message.content.find("bajo jajo") != -1:
         await message.channel.send("Ty pojebie kurwa się zamknij tam kurwa a nie bajoo jajo ty pierdolony chamie")
         
-client.run("NzgyMjA3NDE0MzY2ODk2MTI4.X8I1bA.v5vO8zqTSznlnTWOiZTwukQv8Ek")
+client.run(token)
 
 
