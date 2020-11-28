@@ -3,7 +3,7 @@ from discord.ext import commands
 import random
 import os
 
-teksty = [" to śmieć"," jest jebaną pałą"," chuj ci na starego"]
+teksty = [" to śmieć"," jest jebaną pałą"," chuj ci na starego"," miesza bigos łokciem"," pal gume"," do berła"," wyjmij chuja z mordy"]
 client = discord.Client()
 token = os.getenv("DISCORD_BOT_TOKEN")
 
