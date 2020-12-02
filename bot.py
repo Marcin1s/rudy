@@ -3,7 +3,7 @@ from discord.ext import commands
 import random
 import os
 
-teksty = [" to śmieć"," jest jebaną pałą"," chuj ci na starego"," miesza bigos łokciem"," pal gume"," do berła"," wyjmij chuja z mordy"]
+teksty = [" to śmieć"," jest jebaną pałą"," chuj ci na starego"," miesza bigos łokciem"," pal gume"," do berła"," wyjmij chuja z mordy"," rucham ci matke z całej epy", " pal gume naleśniku jebany"," matka ci sie puszcza"," sklej pizde flecie"," nie bądź taki do przodu bo Cię sznurówk wyprzzedzają"," jesteś rozwinięty jak papier toaletowy"," teraz mi przykro :("," widziałem Cię w sklepie rowerowym na półce z pedałami flecie"]
 client = discord.Client()
 token = os.getenv("DISCORD_BOT_TOKEN")
 
@@ -19,7 +19,7 @@ async def on_message(message):
         else:
             await message.channel.send("Ma być 10 zawodników pajacu")
 
-    elif message.content.find("rudy to pizda") != -1:
+    elif message.content.find("rudy to") != -1:
         author = (str(message.author))[:-5]
         random.shuffle(teksty)
         await message.channel.send(author+teksty[0])
