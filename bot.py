@@ -26,6 +26,9 @@ async def on_message(message):
         else:
             random.shuffle(teksty)
             await message.channel.send(author+teksty[0])
+    elif message.content.find("rudy to ") != -1:
+        author = (str(message.author))[:-5]
+        await message.channel.send(author+" nie bądź taki hej do przodu bo Ci tyłu zabraknie cwaniaczku")
 
     elif message.content.find("bajo jajo") != -1:
         await message.channel.send("Ty pojebie kurwa się zamknij tam kurwa a nie bajoo jajo ty pierdolony chamie")
